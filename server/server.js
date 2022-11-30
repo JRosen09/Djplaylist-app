@@ -11,12 +11,11 @@ app.use(express.json());
 app.use(cors());
 
 const { Songs } = require("./models/songs");
-const { addSong, getAllSongs } = require("./controller");
+const { addSong, getAllSongs, deleteSong } = require("./controller");
 
 app.get("/get_songs", getAllSongs);
 
-// Delete Songs Endpoint
-// Same as post on line 21 but removes song instead of add
+app.delete("/delete_song/:id", deleteSong);
 
 app.post("/add_song", addSong);
 

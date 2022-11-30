@@ -7,7 +7,7 @@ function Home() {
     <div>
       <h1>Just like MUSIC</h1>
       <h3>Music will always be there for you</h3>
-      <Link to="/Home">
+      <Link to="/addsong">
         <button> Get Started </button>
       </Link>
     </div>

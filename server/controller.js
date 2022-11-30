@@ -28,7 +28,16 @@ module.exports = {
     }
   },
 
-  // Delete Songs Method
-  // very similar functionality as addSong on line 4
-  // You just need to remove the song from the model
+  deleteSong: async (req, res) => {
+    console.log("deletehit");
+    try {
+      const { id } = req.params;
+      await Songs.destroy({ where: { id } });
+      res.sendStatus(200);
+    } catch (error) {
+      console.log(`Error In deleteSong`);
+      console.log(error);
+      res.sendStatus(400);
+    }
+  },
 };
