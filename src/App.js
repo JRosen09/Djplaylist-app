@@ -4,17 +4,18 @@ import Home from "./components/Home";
 import Addsong from "./components/Addsong";
 import Songcard from "./components/Songcard";
 import Removesong from "./components/Removesong";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="App">
-      <Header />
+      {location.pathname !== "/" ? <Header /> : null}
       <Routes>
-        <Route path="/" index element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="addsong" element={<Addsong />} />
         <Route path="viewsongs" element={<Songcard />} />
-        <Route path="removesong" element={<Removesong />} />
       </Routes>
     </div>
   );

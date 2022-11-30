@@ -1,0 +1,35 @@
+body {
+  font-family: Consolas, sans-serif;
+  background: #794141;
+  background: linear-gradient(110deg, #9b45eb 50%, #f78259 50%);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main-row-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.main-row-text .btn {
+  font-family: Consolas, sans-serif;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.main-row-text .btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./styles/header.css";
+import styles from "./styles/home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div>
-      <h1>Just like MUSIC</h1>
-      <h3>Music will always be there for you</h3>
+    <div className="main-row-text">
+      <h1>Create a MUSIC Playlist</h1>
+      <p>"Music will always be there for you"</p>
       <Link to="/addsong">
-        <button> Get Started </button>
+        <button className="btn"> Get Started </button>
       </Link>
     </div>
   );

@@ -16,7 +16,7 @@ function Songcard() {
 
   return (
     <div>
-      <h1>Songs Go Here in a List</h1>
+      <h1>Song List</h1>
       {songs.map((song) => (
         <Songdetails song={song} getAllSongs={getAllSongs} />
       ))}
