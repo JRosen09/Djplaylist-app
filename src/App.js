@@ -2,8 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Addsong from "./components/Addsong";
-import Songcard from "./components/Songcard";
-import Removesong from "./components/Removesong";
+import SongList from "./components/SongList";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="addsong" element={<Addsong />} />
-        <Route path="viewsongs" element={<Songcard />} />
+        <Route path="songlist" element={<SongList />} />
       </Routes>
     </div>
   );

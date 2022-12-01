@@ -2,7 +2,7 @@ import axios from "axios";
 import { React, useState, useEffect } from "react";
 import Songdetails from "./Songdetails";
 
-function Songcard() {
+function SongList() {
   const [songs, setSongs] = useState([]);
   const getAllSongs = () => {
     axios.get("http://localhost:4747/get_songs").then((res) => {
@@ -26,4 +26,4 @@ function Songcard() {
   );
 }
 
-export default Songcard;
+export default SongList;

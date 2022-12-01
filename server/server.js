@@ -22,6 +22,6 @@ app.post("/add_song", addSong);
 sequelize
   .sync()
   .then(() => {
-    app.listen(SERVER_PORT, console.log(`Beam me up Scotty ${SERVER_PORT}!`));
+    app.listen(SERVER_PORT, console.log(`Beam me up Scotty @ ${SERVER_PORT}!`));
   })
   .catch((err) => console.log(err));

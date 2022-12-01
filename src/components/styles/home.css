@@ -1,7 +1,7 @@
-body {
+#main {
   font-family: Consolas, sans-serif;
-  background: #794141;
-  background: linear-gradient(110deg, #9b45eb 50%, #f78259 50%);
+  border: none;
+  background: linear-gradient(110deg, #6b00c5, #f78259);
   height: 100vh;
   text-align: center;
   display: flex;

@@ -1,0 +1,40 @@
+.songlist {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 0px 200px 0px 200px;
+  border-bottom: solid #6b00c5;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  justify-items: top;
+}
+
+h3 {
+  display: flex;
+  margin: 10px 20px 0px 20px;
+  justify-content: left;
+  text-align: left;
+}
+
+.rembtn {
+  display: block;
+  justify-content: center;
+  height: 30px;
+  padding: 1px;
+  text-align: center;
+  margin: 0em;
+}
+
+body {
+  font-family: Consolas, sans-serif;
+  border: none;
+  background: linear-gradient(110deg, #6b00c5, #f78259);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}

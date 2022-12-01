@@ -31,6 +31,7 @@ function Addsong() {
   return (
     <div className="entersong">
       <h1>Create your song list</h1>
+      <h3>Enter song info below</h3>
       <form onSubmit={(e) => addsongrequest(e)}>
         <input
           onChange={(e) => setArtist(e.target.value)}
@@ -56,7 +57,7 @@ function Addsong() {
           placeholder="Energy 1-10"
           value={energy}
         />
-        <button>Submit</button>
+        <button className="button">Submit</button>
       </form>
     </div>
   );
