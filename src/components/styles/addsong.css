@@ -1,10 +1,10 @@
 .entersong {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
   flex-basis: 50%;
   flex-grow: 1;
+  margin-top: 50px;
 
   font-family: Consolas, sans-serif;
   border: none;
